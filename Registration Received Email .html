@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Received - Fan Elite Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header img {
+            width: 150px;
+        }
+        .content {
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            color: #1a1a1a;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #0A1F44;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 0 8px 8px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #0A1F44;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta-button:hover {
+            background-color: #081732;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.imgur.com/VcoTyFH.png" alt="Fan Elite Club Logo">
+        </div>
+        <div class="content">
+            <h2>Hi {{ subscriber.name }},</h2>
+            <p>Thank you for registering with <strong>Fan Elite Club!</strong> 🎉</p>
+            <p>We have successfully received your registration details and our team is currently reviewing them. This process ensures that all VIP fan members meet the required criteria.</p>
+            
+            <h3>🔹 What Happens Next?</h3>
+            <p>✔ <strong>Step 1:</strong> Our team is currently <strong>reviewing your information.</strong></p>
+            <p>✔ <strong>Step 2:</strong> You will receive a follow-up email shortly with <strong>next steps.</strong></p>
+            <p>✔ <strong>Step 3:</strong> If your information is valid, we will guide you on how to complete your <strong>account verification.</strong></p>
+            <p>Once your information has been reviewed, we’ll send you a follow-up email with details on the next step. Please ensure you check your inbox (and spam folder) so you don’t miss it.</p>
+
+            <h3>🔹 Need Help?</h3>
+            <p>📩 <strong>Support Email:</strong> <a href="mailto:support@faneliteclub.com">support@faneliteclub.com</a></p>
+            <p>💬 <strong>Live Chat:</strong> <a href="https://faneliteclub.com/#hs-chat-open">Click Here to Chat</a></p>
+
+            <p>Thank you for joining Fan Elite Club!</p>
+        </div>
+
+        <div class="footer">
+            <p>📍 <strong>New York, USA</strong></p>
+            <p>📜 <a href="https://faneliteclub.com/terms-of-service/">Terms of Service</a> | 🔒 <a href="https://faneliteclub.com/privacy-policy-2/">Privacy Policy</a></p>
+            <p>You're receiving this email because you signed up on <strong>Fan Elite Club</strong>. If you didn't sign up, you can <a href="{{ unsubscribe_url }}">unsubscribe here</a>.</p>
+            <p>© 2025 Fan Elite Club. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
